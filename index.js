@@ -10,4 +10,6 @@ sio.on('connect', () => {
 
 sio.on('sync', (data) => {
     console.log(data)
+	
+	sio.emit('notify', {})
 })
